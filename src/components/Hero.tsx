@@ -42,52 +42,7 @@ export default function Hero() {
         </motion.p>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4, duration: 0.8 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-3"
-        >
-          <span className="text-xs tracking-[0.25em] uppercase text-[#D48C45]">
-            Scroll to discover
-          </span>
-          <svg
-            width="16"
-            height="24"
-            viewBox="0 0 16 24"
-            fill="none"
-            className="text-[#D48C45]"
-          >
-            <rect
-              x="1"
-              y="1"
-              width="14"
-              height="22"
-              rx="7"
-              stroke="currentColor"
-              strokeWidth="1.5"
-            />
-            <motion.circle
-              cx="8"
-              cy="8"
-              r="2"
-              fill="currentColor"
-              animate={{ cy: [8, 14, 8] }}
-              transition={{
-                repeat: Infinity,
-                duration: 2,
-                ease: "easeInOut",
-              }}
-            />
-          </svg>
-        </motion.div>
-      </motion.div>
+
     </section>
   );
 }
